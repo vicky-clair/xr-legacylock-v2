@@ -1,0 +1,324 @@
+.secure-app {
+  position: fixed;
+  inset: 0;
+  overflow: auto;
+  background: #0b1220;
+  color: #e3eaf6;
+  font:
+    15px/1.6 system-ui,
+    "Microsoft YaHei",
+    sans-serif;
+  letter-spacing: 0;
+}
+:is(.secure-app, .secure-controls) * {
+  box-sizing: border-box;
+}
+:is(.secure-app, .secure-controls) button,
+:is(.secure-app, .secure-controls) input,
+:is(.secure-app, .secure-controls) select,
+:is(.secure-app, .secure-controls) textarea {
+  font: inherit;
+}
+:is(.secure-app, .secure-controls) button:not(.modal-window-dialog button) {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  background: #202e45;
+  color: #eaf0fa;
+  border: 1px solid #44536b;
+  border-radius: 8px;
+  padding: 9px 14px;
+  cursor: pointer;
+  max-width: 100%;
+  white-space: normal;
+}
+:is(.secure-app, .secure-controls) button:hover {
+  background: #2b405e;
+}
+:is(.secure-app, .secure-controls) button:disabled {
+  opacity: 0.48;
+  cursor: not-allowed;
+}
+:is(.secure-app, .secure-controls) button.primary {
+  background: #2563eb;
+  border-color: #6d99fa;
+  color: white;
+}
+:is(.secure-app, .secure-controls) button:focus-visible,
+:is(.secure-app, .secure-controls) input:focus-visible,
+:is(.secure-app, .secure-controls) select:focus-visible,
+:is(.secure-app, .secure-controls) textarea:focus-visible,
+:is(.secure-app, .secure-controls) summary:focus-visible {
+  outline: 3px solid #6baeff;
+  outline-offset: 3px;
+}
+.secure-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 18px 28px;
+  border-bottom: 1px solid #2d3d54;
+}
+.secure-brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.secure-brand svg {
+  color: #72abff;
+}
+.secure-brand strong {
+  font-size: 21px;
+}
+.secure-brand small {
+  display: block;
+  color: #aab9d0;
+  font-size: 12px;
+}
+.secure-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.secure-badge {
+  padding: 4px 10px;
+  border: 1px solid #517093;
+  border-radius: 20px;
+  font-size: 13px;
+}
+.secure-shell {
+  max-width: 1300px;
+  margin: auto;
+  padding: 26px;
+}
+.secure-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 22px;
+  align-items: start;
+}
+.secure-card {
+  min-width: 0;
+  background: #131f32;
+  border: 1px solid #31435d;
+  border-radius: 14px;
+  padding: 26px;
+  box-shadow: 0 10px 28px #0002;
+}
+.secure-card h1 {
+  font-size: 25px;
+  margin: 0 0 12px;
+}
+.secure-card h2 {
+  font-size: 21px;
+  margin: 0 0 15px;
+}
+.secure-card h3 {
+  font-size: 17px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 10px 0;
+}
+.secure-card p {
+  color: #b9c8df;
+  margin: 12px 0;
+  overflow-wrap: anywhere;
+}
+.secure-card label {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin: 14px 0;
+}
+.secure-card input,
+.secure-card textarea,
+.secure-card select,
+.secure-toolbar input,
+.secure-toolbar select {
+  width: 100%;
+  min-width: 0;
+  background: #0b1527;
+  color: #eaf1ff;
+  padding: 10px 12px;
+  border: 1px solid #546986;
+  border-radius: 7px;
+}
+.secure-card textarea {
+  resize: vertical;
+  overflow-wrap: anywhere;
+}
+.secure-card .secure-check {
+  flex-direction: row;
+  align-items: flex-start;
+  font-size: 13px;
+}
+.secure-card .secure-check input {
+  width: 18px;
+  flex-shrink: 0;
+  margin-top: 3px;
+}
+.secure-card > button {
+  margin: 5px 8px 5px 0;
+}
+.secure-card form > button {
+  margin-bottom: 14px;
+}
+.secure-card hr {
+  border: 0;
+  border-top: 1px solid #344760;
+  margin: 22px 0;
+}
+.secure-two {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+.secure-hint {
+  font-size: 13px;
+}
+.secure-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.secure-message {
+  padding: 14px 18px;
+  background: #123846;
+  border: 1px solid #30838b;
+  border-radius: 10px;
+  margin-bottom: 18px;
+  overflow-wrap: anywhere;
+}
+.secure-message.error {
+  background: #442b32;
+  border-color: #da828f;
+  color: #ffe3e7;
+}
+.secure-nav {
+  display: flex;
+  gap: 12px;
+  margin: 0 0 20px;
+  flex-wrap: wrap;
+}
+.secure-nav [aria-current] {
+  border-color: #80b4ff;
+  background: #213e65;
+}
+.secure-toolbar {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+.secure-toolbar .secure-search {
+  flex: 1;
+  min-width: 180px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0;
+}
+.secure-toolbar select {
+  width: 160px;
+}
+.secure-items {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 12px;
+  margin-top: 22px;
+}
+.secure-items .secure-item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 17px;
+  text-align: left;
+  overflow-wrap: anywhere;
+}
+.secure-item span {
+  font-size: 13px;
+  color: #b3c4dc;
+}
+:is(.secure-app, .secure-controls) footer {
+  color: #94a8c6;
+  font-size: 12px;
+  margin: 24px 0;
+  overflow-wrap: anywhere;
+}
+.secure-overlay {
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  max-height: none;
+  margin: 0;
+  border: 0;
+  color: inherit;
+  position: fixed;
+  inset: 0;
+  z-index: 2000;
+  background: #020817d9;
+  overflow: auto;
+  padding: 24px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+.secure-dialog {
+  width: 560px;
+  max-width: 100%;
+  margin: auto;
+}
+.secure-welcome {
+  max-width: 600px;
+  margin: 8vh auto;
+}
+:is(.secure-app, .secure-controls) details {
+  margin-top: 20px;
+}
+:is(.secure-app, .secure-controls) summary {
+  cursor: pointer;
+}
+:is(.secure-app, .secure-controls) details button {
+  margin: 6px;
+}
+:is(.secure-app, .secure-controls) .modal-backdrop {
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  max-height: none;
+  margin: 0;
+  border: 0;
+  color: inherit;
+  overflow: auto;
+  padding: 18px;
+  align-items: flex-start;
+}
+:is(.secure-app, .secure-controls) .modal-window-dialog {
+  margin: auto;
+  max-height: none;
+  width: min(820px, 100%);
+}
+@media (max-width: 850px) {
+  .secure-grid {
+    grid-template-columns: 1fr;
+  }
+  .secure-shell {
+    padding: 16px;
+  }
+  .secure-header {
+    padding: 14px 16px;
+  }
+  .secure-card {
+    padding: 20px;
+  }
+  .secure-two {
+    grid-template-columns: 1fr;
+  }
+  .secure-brand small {
+    display: none;
+  }
+}

@@ -1,0 +1,11 @@
+# Automatically generated - DO NOT EDIT!
+
+[[permission]]
+identifier = "allow-prepare-destroy"
+description = "Enables the prepare_destroy command without any pre-configured scope."
+commands.allow = ["prepare_destroy"]
+
+[[permission]]
+identifier = "deny-prepare-destroy"
+description = "Denies the prepare_destroy command without any pre-configured scope."
+commands.deny = ["prepare_destroy"]

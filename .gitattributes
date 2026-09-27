@@ -1,0 +1,4 @@
+# 自有文本统一使用 LF；二进制资源由 Git 自动识别。
+* text=auto eol=lf
+# 冻结参考参与逐字节 SHA-256 校验，禁止提交或检出时转换换行。
+reference/legacy/** -text

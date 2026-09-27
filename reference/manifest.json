@@ -1,0 +1,251 @@
+{
+  "date": "2026-09-24T16:47:26.7721915+08:00",
+  "source": "C:/XMWJJ/xr-LegacyLock",
+  "commit": "49789d509e6692f2857c4f26da1930739d6896b9",
+  "files": [
+    {
+      "path": "HEIR_MANUAL.md",
+      "sha256": "d0ce0aa44988b64f9fbc8591b1456dbd071d43e77c41b7ca0272fd6c03952862"
+    },
+    {
+      "path": "index.html",
+      "sha256": "245a47fb9fb10f107e52d5469badca3d72258450209b98e2ad77e57297d0464a"
+    },
+    {
+      "path": "LVCF3_PROTOCOL.md",
+      "sha256": "b464f3c0737db5cb924cb397e53d1bfa882eaec9ca62675adb05a708c2139a0c"
+    },
+    {
+      "path": "OWNER_VS_HEIR_PERMISSIONS.md",
+      "sha256": "b20f328a467112448a153eda6f0579684725ec2a3bf263d63678018c030c4456"
+    },
+    {
+      "path": "package-lock.json",
+      "sha256": "18f97c665ac5f2c6781aac3e0b02ea371e8a21cea2d3ef585700e6ce474cb174"
+    },
+    {
+      "path": "package.json",
+      "sha256": "b41be447e495626a9f88981ef720772b5fb5e2b5d9e9ba9a3d529a7acb521bf8"
+    },
+    {
+      "path": "tsconfig.json",
+      "sha256": "61667cb456e20e7c6c96651fe573c090c8fe0a4d8f47adb8a2dbdc0f6d6d9420"
+    },
+    {
+      "path": "tsconfig.node.json",
+      "sha256": "9e2abb169ea87b7190613a1d4da57ca608463a453bd4231fa3aeee5e308370dd"
+    },
+    {
+      "path": "USER_MANUAL.md",
+      "sha256": "3e6efc219c690fcef77bc1cca49e458348933003d17ff90c7b1d0d17aca7a63b"
+    },
+    {
+      "path": "vite.config.ts",
+      "sha256": "9ebbfb7e8ff33a595668c1b16823a55dd371c05720bb40ba2ee2cef10ac80b9a"
+    },
+    {
+      "path": "electron/main.cjs",
+      "sha256": "b78c5694dbaa6ff549e3d9c796cfb55cf61d7b99e60bbbcfd0130b4281c35c73"
+    },
+    {
+      "path": "electron/preload.cjs",
+      "sha256": "62180384d92bf9e74ee2a5cf12a7e0e063fa4cf45ebc4ac2e205dd21caac29b4"
+    },
+    {
+      "path": "electron/tray-icon.png",
+      "sha256": "420ba0f2298fd420dc8ea74f9d2019f1aa705a8d9c433d83f889ccf4589478e8"
+    },
+    {
+      "path": "electron/ui-messages.json",
+      "sha256": "92ff367fff63ae3eed238aa4c82b7062f0166562ce96446dad03a324ed58757c"
+    },
+    {
+      "path": "electron/vault-controller.cjs",
+      "sha256": "7ee2937fc4584df8ffc31ca034eaba0c72fe6d37256059016b96989a0cdccfd6"
+    },
+    {
+      "path": "electron/vault-core.cjs",
+      "sha256": "041411e9deca6e02c5b14642ef4350756d610345b031ac29e0c2148e6a4b8d7a"
+    },
+    {
+      "path": "electron/vault-local-key.cjs",
+      "sha256": "7fc7e9212c194628a9fd125448ff082984df93a418ef79d6988411578f1b49ca"
+    },
+    {
+      "path": "electron/vault-media.cjs",
+      "sha256": "b0fa8dcf9151a97193fcc43132d26abe1be84b03ac2e30bd59277f353162e6a5"
+    },
+    {
+      "path": "electron/vault-migrate.cjs",
+      "sha256": "151255a964ef96ec0c25d05eb1369738676f6247ccf20fe0362ef7a05a5b5f2f"
+    },
+    {
+      "path": "electron/vault-preferences.cjs",
+      "sha256": "37fefc79b08652388502981235fb3052aa9f2e290fdad74d98ad5ff022527547"
+    },
+    {
+      "path": "electron/vault-store.cjs",
+      "sha256": "f683d7672c280dbeec4cc47eb2554dbf39c34694f6ce7282f519b02eb27e5166"
+    },
+    {
+      "path": "electron/vault-tray.cjs",
+      "sha256": "e7db01c6ab685259cc040891d5411fb771911c49276ac2ff8d56924a0159c530"
+    },
+    {
+      "path": "scripts/generate-tray-icon.cjs",
+      "sha256": "72977d19d5238b6c0a283d7ff84f69473cf34d9fc91159b023724776b60f726a"
+    },
+    {
+      "path": "scripts/installer.iss",
+      "sha256": "614151fdf1b4f17770a0066dbed38bf5e94fb50432de4b55ba3149f0abd8b9bd"
+    },
+    {
+      "path": "scripts/measure-startup.cjs",
+      "sha256": "0a04397577b56a192ceb35470f606715d2b4ed6712214fd8c22053b4cd587ba4"
+    },
+    {
+      "path": "scripts/recovery-reader.cjs",
+      "sha256": "4a562fa1f4a53bef1cdbd883b2bb6a72527bf85a3fcdeeec0b4a7f0fbb411427"
+    },
+    {
+      "path": "src/App.tsx",
+      "sha256": "0c8309b354b9611859a3ce6e2c553c534d3955e7bad5fe6c59f09716dea6fe89"
+    },
+    {
+      "path": "src/index.css",
+      "sha256": "d8991654f45a135c00bd9b10e3f774471e4b824adbb6915606932565b6cf5bfd"
+    },
+    {
+      "path": "src/main.tsx",
+      "sha256": "cf4bfd8376644c48d8beb59137ce6ef37be99a9660fb5a35f792d19d12b48cc2"
+    },
+    {
+      "path": "src/restored-app.css",
+      "sha256": "757f128ee42a694e8ec3175fc89cbf4de738ded10b198b73aaf8003b3ca6b81e"
+    },
+    {
+      "path": "src/secure-app.css",
+      "sha256": "deafefbca4778c984824dfb7f1fbc2edf9a302ca12c7a00a5e8a95b97ea52dc3"
+    },
+    {
+      "path": "src/components/BackupImport.tsx",
+      "sha256": "d8d9d1640d2634876318a5b1a6098630a8ce7800215017ca447b8c34df4ba712"
+    },
+    {
+      "path": "src/components/CategoryPickerModal.tsx",
+      "sha256": "4c174aaf8d5bf60e75f0560bfae06c6e1a7526dc72f7349dd4f851398b259ae5"
+    },
+    {
+      "path": "src/components/ItemModal.tsx",
+      "sha256": "ba41143b6d7b93f002ce66a075e4a100e99b765e54fd75c69295bd4396c5b9ac"
+    },
+    {
+      "path": "src/components/RightContentArea.tsx",
+      "sha256": "97c8870ad817f73477e05ffe87fddb4d25673d1e931f0a6b9345665252ba4509"
+    },
+    {
+      "path": "src/components/Sidebar.tsx",
+      "sha256": "375c9d23b8382fd8a726343dc0ba9c3f77ea3561ae56354e5662f282a9568939"
+    },
+    {
+      "path": "src/components/SubscriptionModal.tsx",
+      "sha256": "698a3b4350eb142f256b867099323d4471a2eb9edbc81ad2289326ac93bb21b1"
+    },
+    {
+      "path": "src/services/categories.tsx",
+      "sha256": "15d3433c16ffd4a765ab7595ac1fc964b1e9e17a828f84d82c015d2a287f3175"
+    },
+    {
+      "path": "src/services/messages.ts",
+      "sha256": "15684dcc7b79995f064f78a8e53520acc80dc03fa3a87b7f6c0bfa6d210a5a45"
+    },
+    {
+      "path": "src/services/themes.ts",
+      "sha256": "267d2d5bf9e1baf4430f59a0a01eafb67e0a7dd517d8f031703b72919d881799"
+    },
+    {
+      "path": "src/services/vaultClient.ts",
+      "sha256": "9e09c45bc55767ec38eabae41c4b8be201adab6d226468023142b198155cc52a"
+    },
+    {
+      "path": "src/services/i18n/index.tsx",
+      "sha256": "dcac438b38f1e71089452f2de0d2be1b24d77f2617533b7ffa2d69bf5b73e400"
+    },
+    {
+      "path": "src/services/i18n/types.ts",
+      "sha256": "3edf6cefd936849d7327381779a96b303c7608a74a60b7f76eb986594dd881d6"
+    },
+    {
+      "path": "src/services/i18n/locales/en.ts",
+      "sha256": "31dd609282e9ffc3761966741820fd8da9ba2032e3755094bdc06fadcdfd932e"
+    },
+    {
+      "path": "src/services/i18n/locales/ja.ts",
+      "sha256": "6613d78923ad24ebbd888663f87dcfcbda130a788926fe6993d94d45a8365af8"
+    },
+    {
+      "path": "src/services/i18n/locales/zh.ts",
+      "sha256": "5d6fe4907ac96ea4c4e5241e391aef3b716e604ace92b1f7da5b3f34a70d9cbf"
+    },
+    {
+      "path": "src/types/index.ts",
+      "sha256": "e4c2b30f173f3702ad618d28d1011644a912601666d32a3a627662021c6700d1"
+    },
+    {
+      "path": "tests/backup-flows.test.cjs",
+      "sha256": "a9689a43d8233bab409c19f92df7fd2b5c4f2a754e0d5c71ead59cf5738d41d8"
+    },
+    {
+      "path": "tests/electron-smoke.cjs",
+      "sha256": "0a84a39a1ea9932ecaf5093eda69eac9ab4e794fcc5f440d4d295c7f4eb6ba57"
+    },
+    {
+      "path": "tests/local-key.test.cjs",
+      "sha256": "9df76b956e77be5f53e5130f440445df44e59711b7e36f500c63d3efd575a3a3"
+    },
+    {
+      "path": "tests/measure-startup-child.cjs",
+      "sha256": "126a7eef7bc35e713f863df920c7a50c6c5d475743a21e0c8a9b84cfe0c1d624"
+    },
+    {
+      "path": "tests/run-desktop.cjs",
+      "sha256": "75e4ba75d748c6398ff5ebe51d6b6b23a29a474f2be74adcaa2afbd0a7401206"
+    },
+    {
+      "path": "tests/run-tray-native.cjs",
+      "sha256": "6a47d5778335f8a967625ea69358736c4a01c791c9590cb9f014b3c6599a6eb5"
+    },
+    {
+      "path": "tests/single-instance-child.cjs",
+      "sha256": "ba64f886e8a2a5a92972cd39a41a3ef7da3cef68e13574a4b9a8941e5421f8c0"
+    },
+    {
+      "path": "tests/tray-native.cjs",
+      "sha256": "c630b0ff3f89ef601edda5d389790632cb7ffead51623e91820d0709055a5c92"
+    },
+    {
+      "path": "tests/tray.test.cjs",
+      "sha256": "d77d0e433cd33a641aa7f385ad1ee2d1f75440f391caedf292302d984e6ed635"
+    },
+    {
+      "path": "tests/vault.test.cjs",
+      "sha256": "0707703de0852924d27f768603308dfeee6dfdf0064171db33e12d40e2dd04a7"
+    },
+    {
+      "path": "tests/fixtures/README.md",
+      "sha256": "b15f2456e25deab71c4ed90723528e0dc4d242b4efc399393f26b88487a55f7b"
+    },
+    {
+      "path": "tests/fixtures/v3-primary.json",
+      "sha256": "ba58358ef512f0dc061fb103122d2e552cce7ca019eb0f09224a87af9f21a8e1"
+    },
+    {
+      "path": "tests/fixtures/v3-secondary.json",
+      "sha256": "a6e8108763952d87cbb8402f422f11860a225a8d532c5b84c57a338eab2520d8"
+    },
+    {
+      "path": "tests/fixtures/v3-vault.json",
+      "sha256": "a738d808736a7e116c6d31594cf3ac09ac935be0ccd7e9a88df6bbd269bd8714"
+    }
+  ]
+}

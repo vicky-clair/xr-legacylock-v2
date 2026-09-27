@@ -1,0 +1,620 @@
+/* 桌面布局适配层：在基础样式之上还原三栏、主题及窄窗口布局；调整时需核对缩放和高 DPI。 */
+.restored-app {
+  position: fixed;
+  inset: 0;
+  color: #e9eefa;
+  font:
+    14px/1.5 system-ui,
+    "Microsoft YaHei",
+    sans-serif;
+}
+.optional-fields > summary {
+  cursor: pointer;
+  color: #c4d4ee;
+  font-weight: 600;
+  padding: 4px 0;
+}
+.optional-fields[open] > summary {
+  margin-bottom: 16px;
+}
+.optional-fields > summary:focus-visible {
+  outline: 2px solid #67e8f9;
+  outline-offset: 4px;
+  border-radius: 4px;
+}
+.restored-workspace {
+  min-width: 0;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+.secure-controls {
+  color: #e3eaf6;
+  font:
+    15px/1.6 system-ui,
+    "Microsoft YaHei",
+    sans-serif;
+}
+.restored-app .sidebar-settings-btn > div {
+  min-width: 0;
+}
+.restored-app .sidebar-settings-btn span {
+  white-space: nowrap;
+}
+@media (max-width: 1100px) {
+  .restored-app .settings-version-tag {
+    display: none;
+  }
+}
+.restored-workspace > .secure-message {
+  margin: 8px 14px 0;
+  flex-shrink: 0;
+}
+.restored-workspace > p {
+  padding: 4px 18px;
+}
+.restored-app .app-main {
+  min-height: 0;
+  min-width: 0;
+}
+.restored-app .app-sidebar {
+  width: 220px;
+  min-width: 180px;
+  flex-shrink: 0;
+  overflow: auto;
+}
+.restored-app .main-topbar {
+  height: auto;
+  min-height: 64px;
+  padding: 12px 16px;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.restored-app .topbar-left {
+  min-width: 0;
+  flex: 1 1 270px;
+}
+.restored-app .topbar-center-tools {
+  flex-wrap: wrap;
+  flex: 0 1 auto;
+  overflow: visible;
+}
+.restored-app .topbar-right {
+  margin-left: auto;
+}
+.restored-app .search-container {
+  min-width: 100px;
+  width: 190px;
+}
+.restored-app .main-scroll-content {
+  min-height: 0;
+  overflow: auto;
+  padding: 24px;
+}
+.restored-app .vault-item-card {
+  background: var(--vault-card-bg);
+  border: 1px solid #ffffff1f;
+  border-radius: 14px;
+  padding: 18px;
+  min-width: 0;
+}
+.restored-app .vault-items-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(320px, 100%), 1fr));
+  gap: 16px;
+}
+.restored-app .card-top-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+.restored-app .card-title-group {
+  min-width: 0;
+}
+.restored-app .card-title-group h3 {
+  overflow-wrap: anywhere;
+}
+.restored-app .card-category-badge {
+  width: 38px;
+  height: 38px;
+  border-radius: 10px;
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+}
+.restored-app .card-category-badge svg {
+  width: 22px;
+  height: 22px;
+}
+.restored-app .card-actions {
+  flex-shrink: 0;
+}
+.restored-app button:focus-visible,
+.restored-dialog button:focus-visible {
+  outline: 2px solid var(--vault-accent, #00d4ff);
+  outline-offset: 3px;
+}
+.restored-app .workspace-status {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+  color: #adbfdf;
+  font-size: 12px;
+}
+.workspace-status p {
+  flex-basis: 100%;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+.workspace-status button {
+  color: #67e8f9;
+  text-decoration: underline;
+}
+.restored-app .secure-card,
+.restored-lock .secure-card {
+  background: var(--vault-card-bg, rgba(22, 29, 82, 0.85));
+  border-color: #ffffff20;
+}
+.restored-settings {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: start;
+  gap: 18px;
+}
+.restored-settings .secure-card {
+  padding: 22px;
+}
+.appearance-themes {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin: 18px 0;
+}
+.appearance-themes button {
+  min-height: 65px;
+  box-shadow: inset 0 0 0 1px #ffffff30;
+}
+.appearance-themes button[aria-pressed="true"] {
+  outline: 2px solid var(--vault-accent);
+  outline-offset: 2px;
+}
+.restored-dialog {
+  margin: auto;
+  color: #e9eefa;
+  padding: 0;
+}
+.restored-dialog::backdrop {
+  background: #080c1bd9;
+  backdrop-filter: blur(10px);
+}
+.restored-dialog .sub-modal-body {
+  min-height: 0;
+  overflow: auto;
+}
+.restored-dialog .sub-tier-card {
+  display: block;
+  text-align: left;
+  width: 100%;
+}
+.restored-dialog .sub-primary-subscribe-btn {
+  width: 100%;
+}
+.restored-dialog .sub-feedback-box {
+  font-size: 13px;
+  line-height: 1.7;
+}
+.subscription-test-actions {
+  display: flex;
+  gap: 12px;
+  margin: 16px 0;
+  flex-wrap: wrap;
+}
+.subscription-test-actions button {
+  border: 1px solid #ffffff30;
+  border-radius: 8px;
+  padding: 8px 14px;
+}
+.restored-app .modal-window-dialog {
+  max-width: 95vw;
+}
+.restored-app > dialog.modal-backdrop[open] {
+  width: 100vw;
+  height: 100vh;
+  max-width: none;
+  max-height: none;
+  margin: 0;
+  border: 0;
+  padding: 18px;
+  overflow: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #060b1ddd;
+  color: inherit;
+}
+.restored-app > dialog.modal-backdrop .modal-window-dialog {
+  width: min(820px, 100%);
+  max-height: calc(100vh - 36px);
+  margin: auto;
+}
+.restored-app .secure-overlay {
+  color: #e9eefa;
+}
+.restored-category-dialog {
+  max-height: 90vh;
+  max-width: 95vw;
+  width: 740px;
+  background: transparent;
+  border: 0;
+}
+.restored-category-dialog .cat-modern-modal {
+  max-width: 100%;
+}
+@media (max-width: 1100px) {
+  .restored-settings {
+    grid-template-columns: 1fr;
+  }
+  .restored-app .app-sidebar {
+    width: 190px;
+  }
+  .restored-app .main-scroll-content {
+    padding: 16px;
+  }
+  .restored-app .vault-items-grid {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 720px) {
+  .restored-app .app-sidebar {
+    width: 155px;
+    min-width: 155px;
+  }
+  .restored-app .main-topbar {
+    padding: 10px;
+  }
+  .restored-app .topbar-left {
+    flex-wrap: wrap;
+    flex-basis: 100%;
+  }
+  .restored-app .search-container {
+    flex: 1;
+  }
+  .restored-app .tool-pill-label {
+    display: inline;
+  }
+  .restored-app .content-header-banner {
+    gap: 12px;
+  }
+  .restored-app .header-title {
+    font-size: 20px;
+  }
+  .restored-app .topbar-right {
+    display: none;
+  }
+}
+.temporary-language {
+  position: fixed;
+  right: 14px;
+  bottom: 10px;
+  z-index: 20;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  padding: 6px 10px;
+  background: #111b30;
+  color: #e2e8f0;
+  border-radius: 8px;
+  font-size: 12px;
+}
+.temporary-language select {
+  background: #162238;
+  color: #fff;
+  border: 1px solid #52607a;
+  border-radius: 4px;
+  padding: 4px;
+}
+.sidebar-settings-btn {
+  gap: 8px;
+}
+.sidebar-settings-btn > div {
+  min-width: 0;
+}
+.sidebar-settings-btn > div > span {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.sidebar-settings-btn .settings-version-tag {
+  flex-shrink: 0;
+}
+.workspace-status > span {
+  word-spacing: 2px;
+}
+.restored-app .topbar-center-tools,
+.restored-app .card-actions {
+  gap: 10px;
+}
+.restored-app .card-field-value-group {
+  gap: 8px;
+}
+.restored-app .btn-mini-copy {
+  min-width: 28px;
+  min-height: 28px;
+  border-radius: 7px;
+}
+.restored-app .vault-item-card {
+  border: 1px solid rgba(148, 163, 184, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+.restored-app .vault-item-card:hover {
+  border-color: rgba(56, 189, 248, 0.38);
+}
+.restored-app .card-field-row {
+  padding-block: 7px;
+}
+.restored-app .card-fields-box:empty {
+  display: none;
+}
+.secure-controls .secure-row {
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.secure-controls .secure-card > button {
+  margin: 6px 0;
+}
+.secure-controls button:focus-visible,
+.restored-app button:focus-visible {
+  outline: 2px solid #67e8f9;
+  outline-offset: 3px;
+}
+.restored-app .modal-window-footer {
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.secure-actions {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(240px, 100%), 1fr));
+  gap: 12px;
+  margin: 18px 0;
+}
+.secure-controls .secure-actions > button {
+  margin: 0;
+  width: 100%;
+}
+.secure-controls button:not(.modal-window-dialog button) {
+  min-height: 44px;
+  border-radius: 10px;
+  border-color: #607a9b80;
+  background: linear-gradient(180deg, #2a3d59, #1e2d45);
+  box-shadow:
+    inset 0 1px #ffffff0c,
+    0 2px 5px #0002;
+  line-height: 1.5;
+  transition:
+    background 120ms,
+    border-color 120ms,
+    box-shadow 120ms;
+}
+.secure-controls button:not(.modal-window-dialog button):not(:disabled):hover {
+  border-color: #83c7ef;
+  background: #2c4664;
+}
+.secure-controls button:not(.modal-window-dialog button).primary {
+  background: linear-gradient(135deg, #2563eb, #3459cf);
+  border-color: #709bff;
+}
+.secure-controls button:not(.modal-window-dialog button).danger:not(:disabled) {
+  color: #fecaca;
+  background: #542936;
+  border-color: #e8797977;
+}
+.secure-controls button:not(.modal-window-dialog button):disabled {
+  opacity: 1;
+  color: #8e9bb0;
+  background: #1a2940;
+  border-color: #3d4d6480;
+  box-shadow: none;
+}
+.secure-controls .secure-row > button {
+  margin: 0;
+}
+.restored-app .modal-window-dialog .form-card {
+  border-radius: 12px;
+}
+
+/* 分类导航、紧凑资产列表及可独立滚动的详情区域。 */
+.restored-app .master-detail-content {
+  padding: 14px 18px 18px;
+  overflow: hidden;
+}
+.master-detail-content .workspace-status {
+  margin-bottom: 10px;
+  flex-shrink: 0;
+}
+.master-detail-content .content-header-banner {
+  margin-bottom: 14px;
+  gap: 12px;
+}
+.master-detail-content .hd-icon-3d {
+  display: none;
+}
+.master-detail-content .header-title {
+  font-size: 21px;
+}
+.vault-master-detail {
+  display: grid;
+  grid-template-columns: clamp(210px, 29%, 330px) minmax(0, 1fr);
+  flex: 1;
+  min-height: 0;
+  overflow: hidden;
+  border: 1px solid #ffffff20;
+  border-radius: 14px;
+  background: var(--vault-card-bg);
+}
+.vault-list-pane {
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+  min-width: 0;
+  border-right: 1px solid #ffffff20;
+  background: #080f241f;
+}
+.vault-list-heading {
+  padding: 14px;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  color: #b3c2df;
+  font-size: 12px;
+  border-bottom: 1px solid #ffffff15;
+}
+.vault-list {
+  padding: 8px;
+  overflow: auto;
+  min-height: 0;
+}
+.restored-app .vault-list-item {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 12px;
+  padding: 14px 10px;
+  margin-bottom: 5px;
+  border-radius: 10px;
+  border: 1px solid transparent;
+  text-align: left;
+  color: #e9eefa;
+}
+.vault-list-item:hover {
+  background: #ffffff09;
+}
+.restored-app .vault-list-item[aria-selected="true"] {
+  background: #67e8f91a;
+  border-color: #67e8f95c;
+  box-shadow: inset 3px 0 #67e8f9;
+}
+.vault-list-summary {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  gap: 4px;
+}
+.vault-list-summary strong {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 14px;
+}
+.vault-list-summary > span {
+  font-size: 12px;
+  color: #b3c2df;
+}
+.vault-detail-pane {
+  min-width: 0;
+  overflow: auto;
+  overscroll-behavior: contain;
+}
+.restored-app .vault-detail-pane .vault-item-card {
+  background: transparent;
+  padding: 24px;
+  border: 0;
+  box-shadow: none;
+  border-radius: 0;
+}
+.vault-detail-pane .card-top-row {
+  flex-wrap: wrap;
+}
+.vault-detail-pane .card-title-text {
+  font-size: 21px;
+}
+.restored-app .vault-detail-pane .btn-card-action {
+  width: auto;
+  min-width: 32px;
+  padding: 6px 10px;
+  gap: 6px;
+  height: auto;
+}
+.vault-detail-pane .card-field-row {
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 8px;
+  border-bottom: 1px solid #ffffff10;
+}
+.vault-detail-pane .card-field-row:last-child {
+  border-bottom: 0;
+}
+.vault-detail-pane .card-field-value-group {
+  width: 100%;
+  min-width: 0;
+}
+.vault-detail-pane .card-field-value {
+  flex: 1;
+  min-width: 0;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  font-size: 14px;
+}
+.vault-detail-pane .btn-mini-copy {
+  flex-shrink: 0;
+}
+.detail-notes {
+  padding: 12px 0;
+  font:
+    14px/1.8 system-ui,
+    sans-serif;
+}
+.detail-notes h4 {
+  margin: 0 0 8px;
+  color: #b3c2df;
+  font-size: 12px;
+}
+.detail-notes p,
+.detail-inheritance {
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  min-width: 0;
+}
+.vault-detail-pane .takeover-badge {
+  align-items: flex-start;
+  font-size: 13px;
+  padding: 12px;
+}
+@media (max-width: 1000px) {
+  .restored-app .app-sidebar {
+    width: 170px;
+    min-width: 170px;
+  }
+  .vault-master-detail {
+    grid-template-columns: 200px minmax(0, 1fr);
+  }
+  .restored-app .vault-detail-pane .vault-item-card {
+    padding: 16px;
+  }
+  .restored-app .master-detail-content {
+    padding: 10px;
+  }
+}
+@media (max-width: 700px) {
+  .restored-app .master-detail-content {
+    overflow: auto;
+  }
+  .vault-master-detail {
+    grid-template-columns: minmax(0, 1fr);
+    flex: none;
+    overflow: visible;
+  }
+  .vault-list-pane {
+    max-height: 220px;
+    border-right: 0;
+    border-bottom: 1px solid #ffffff20;
+  }
+  .vault-detail-pane {
+    overflow: visible;
+  }
+}

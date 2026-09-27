@@ -1,0 +1,717 @@
+{
+  "此功能尚未迁移；未读取或写入任何密库。": ["This feature has not been migrated yet. No vault was read or written.", "この機能はまだ移行されていません。保管庫の読み書きは行われていません。"],
+  "本机解锁方式": ["Unlock on this device", "この端末のロック解除"],
+  "已记住安全密钥：本机解锁只需密码。": [
+    "Security key remembered: enter your password to unlock this device.",
+    "安全キーを保存済みです。この端末はパスワードで解除できます。"
+  ],
+  "每次解锁必须输入密码和安全密钥。": [
+    "Password and security key are required for every unlock.",
+    "解除のたびにパスワードと安全キーが必要です。"
+  ],
+  "记住密钥会降低本机保护强度；备份导入、导出及更换凭据仍需要密码和安全密钥。": [
+    "Remembering the key reduces local protection. Backup import, export and credential changes still require both credentials.",
+    "キーの保存は端末の保護を弱めます。バックアップの入出力や認証情報の変更には両方が必要です。"
+  ],
+  "改为每次输入安全密钥": [
+    "Require the security key every time",
+    "毎回安全キーを入力する"
+  ],
+  "在本机记住安全密钥": [
+    "Remember security key on this device",
+    "この端末に安全キーを保存"
+  ],
+  "系统安全存储不可用，无法启用记住密钥。": [
+    "Secure OS storage is unavailable. The key cannot be remembered.",
+    "OSの安全なストレージが利用できないため、キーを保存できません。"
+  ],
+  "改用密码和安全密钥解锁": [
+    "Use password and security key instead",
+    "パスワードと安全キーで解除する"
+  ],
+  "已取消记住密钥，下次解锁需要两项凭据。": [
+    "Remembered key removed. Both credentials are required next time.",
+    "保存したキーを削除しました。次回は両方の認証情報が必要です。"
+  ],
+  "已在本机记住安全密钥；请继续保留独立密钥备份。": [
+    "Security key remembered locally. Keep your separate key backup.",
+    "この端末に安全キーを保存しました。別途キーのバックアップを保管してください。"
+  ],
+  "本机记住的密钥不可用，请改用密码和安全密钥解锁。": [
+    "Remembered key unavailable. Unlock with your password and security key.",
+    "保存したキーを利用できません。パスワードと安全キーで解除してください。"
+  ],
+  "先选择类型，再填写内容；只有标题必填。": [
+    "Choose a type, then add details. Only the title is required.",
+    "種類を選んで内容を入力します。必須項目はタイトルのみです。"
+  ],
+  "交接对象姓名（选填）": [
+    "Recipient name (optional)",
+    "引き継ぐ相手の名前（任意）"
+  ],
+  "整体交接说明（选填）": [
+    "General handover notes (optional)",
+    "全体の引き継ぎメモ（任意）"
+  ],
+  "交接信息仅用于说明，不验证身份、不通知对方，也不授予权限；只读访问仍需要双 U 盘。": [
+    "These notes do not verify identity, notify anyone or grant access. Read-only recovery still requires both USB drives.",
+    "この情報は説明用です。本人確認、通知、権限付与は行いません。読み取り専用アクセスには引き続き2本のUSBが必要です。"
+  ],
+  "账号、密码与网址（按需填写）": [
+    "Account, password and URL (optional)",
+    "アカウント・パスワード・URL（必要に応じて入力）"
+  ],
+  "这项资产如何交接（选填）": [
+    "How to hand over this item (optional)",
+    "この項目の引き継ぎ方法（任意）"
+  ],
+  "操作失败": ["Operation failed", "操作に失敗しました"],
+  "界面设置已保存。": ["Display settings saved.", "表示設定を保存しました。"],
+  "已扫描实际 USB 设备。": [
+    "USB devices scanned.",
+    "USB デバイスをスキャンしました。"
+  ],
+  "双 U 盘": ["Two USB drives", "2 本の USB"],
+  "扫描设备": ["Scan devices", "デバイスをスキャン"],
+  "请选择两个不同的物理 USB 设备。密钥文件可复制，不具备不可克隆的硬件保护。": [
+    "Select two separate physical USB drives. Key files can be copied; they are not hardware-bound.",
+    "異なる物理 USB を 2 本選択してください。鍵ファイルはコピー可能で、ハードウェアに固定されていません。"
+  ],
+  "主盘 A": ["Primary A", "主 USB A"],
+  "副盘 B": ["Secondary B", "副 USB B"],
+  "请选择已扫描的设备": [
+    "Select a scanned device",
+    "スキャン済みデバイスを選択"
+  ],
+  "尚无设备列表。插入 U 盘后点击“扫描设备”；不会显示模拟设备。": [
+    "Insert your USB drives and scan to list actual devices.",
+    "USB を接続してスキャンしてください。実際のデバイスのみ表示します。"
+  ],
+  "安全密钥": ["Security key", "セキュリティキー"],
+  "LL3-…（密码与密钥必须同时提供）": [
+    "LL3-… (both password and key required)",
+    "LL3-…（パスワードとキーの両方が必要）"
+  ],
+  "新密码（至少 12 位）": [
+    "New password (at least 12 characters)",
+    "新しいパスワード（12 文字以上）"
+  ],
+  "再次输入新密码": ["Repeat new password", "新しいパスワードを再入力"],
+  "新安全密钥": ["New security key", "新しいセキュリティキー"],
+  "生成新的随机安全密钥": [
+    "Generate new random security key",
+    "新しいランダムキーを生成"
+  ],
+  "我已将新安全密钥保存到独立安全位置。重新生成后须重新备份。": [
+    "I saved the new key in a separate safe place. Regenerating requires a new copy.",
+    "新しいキーを別の安全な場所に保存しました。再生成した場合は再度保存が必要です。"
+  ],
+  "已验证两项凭据，进入所有者会话。": [
+    "Both factors verified. Owner access granted.",
+    "両方の認証情報を確認しました。所有者としてアクセスします。"
+  ],
+  "已写入并校验加密备份：": [
+    "Encrypted backup written and verified:",
+    "暗号化バックアップの書き込みと検証が完了しました："
+  ],
+  "两盘解锁密钥和主盘信息备份已写入并校验：": [
+    "USB keys and primary data backup written and verified:",
+    "両 USB の鍵と主 USB のデータバックアップを保存・検証しました："
+  ],
+  "请确认新密码一致且至少 12 位，并备份新密钥。": [
+    "Use matching passwords of at least 12 characters and back up the new key.",
+    "一致する 12 文字以上のパスワードを入力し、新しいキーを保存してください。"
+  ],
+  "本机凭据已更新；请重新导出并更新主盘，副盘无需更改。旧备份仍使用旧凭据。": [
+    "Credentials updated. Re-export and update the primary USB; the secondary is unchanged. Old backups retain old credentials.",
+    "認証情報を更新しました。再エクスポートし主 USB を更新してください。副 USB は変更不要です。旧バックアップは旧認証情報を使用します。"
+  ],
+  "请输入 DELETE 进行第二次确认。": [
+    "Type DELETE for the second confirmation.",
+    "2 回目の確認として DELETE と入力してください。"
+  ],
+  "外观与背景": ["Appearance and background", "外観と背景"],
+  "界面语言": ["Display language", "表示言語"],
+  "关闭窗口后锁定并常驻托盘": [
+    "Lock and stay in tray when closing the window",
+    "ウィンドウを閉じるとロックしてトレイに常駐"
+  ],
+  "托盘菜单可以重新打开或彻底退出。隐藏到托盘会立即锁定密库。": [
+    "Use the tray menu to reopen or exit. Hiding to the tray locks the vault immediately.",
+    "トレイメニューから再表示または終了できます。トレイに隠すと直ちにロックします。"
+  ],
+  "锁定并隐藏到托盘": ["Lock and hide to tray", "ロックしてトレイに隠す"],
+  "退出应用": ["Exit application", "アプリを終了"],
+  "打开 LegacyLock": ["Open LegacyLock", "LegacyLock を開く"],
+  "保留原来的五套渐变背景；保存后下次启动继续使用。": [
+    "Choose from five gradient themes. Saved choices persist across restarts.",
+    "5 種類のグラデーション背景から選べます。保存した設定は再起動後も保持されます。"
+  ],
+  "界面缩放": ["Interface scale", "表示倍率"],
+  "付费订阅 · 测试体验": ["Subscription · demo", "サブスクリプション・デモ"],
+  "应用与继承设置": ["Application and inheritance", "アプリと継承の設定"],
+  "设置已加密保存。": [
+    "Settings saved with encryption.",
+    "設定を暗号化して保存しました。"
+  ],
+  "无操作自动锁定": ["Lock after inactivity", "無操作時の自動ロック"],
+  "分钟": ["min", "分"],
+  "继承人姓名": ["Heir name", "継承者の名前"],
+  "继承说明": ["Instructions for heir", "継承の説明"],
+  "保存设置": ["Save settings", "設定を保存"],
+  "删除本机密库": ["Delete local vault", "この端末の保管庫を削除"],
+  "删除本机的所有登录信息、安全备注、附件、继承设置和本机回退副本。外部导出文件、U 盘及系统快照不会被删除，无法保证存储介质残留不可恢复。": [
+    "Deletes local logins, notes, attachments, inheritance settings and local rollback copies. External exports, USB files and system snapshots remain. Storage remnants may be recoverable.",
+    "この端末のログイン情報、メモ、添付ファイル、継承設定とロールバック用コピーを削除します。外部バックアップ、USB、システムスナップショットは残ります。記憶媒体の残留データの復元不能は保証できません。"
+  ],
+  "删除本机密库（需两次确认）": [
+    "Delete local vault (two confirmations)",
+    "保管庫を削除（2 回の確認が必要）"
+  ],
+  "信息数据已验证并导入。": [
+    "Information verified and imported.",
+    "データを検証してインポートしました。"
+  ],
+  "已打开信息备份，当前为只读会话，不覆盖本机密库。": [
+    "Backup opened read-only. The local vault is unchanged.",
+    "バックアップを読み取り専用で開きました。本機の保管庫は変更されません。"
+  ],
+  "信息数据备份（.llvault）": [
+    "Information backup (.llvault)",
+    "データバックアップ（.llvault）"
+  ],
+  "包含登录信息、安全备注、自定义字段和附件，以加密文件保存；不是 U 盘解锁密钥文件。完整使用需要密码＋安全密钥，已配置的双盘只能只读访问。": [
+    "Encrypted logins, notes, custom fields and attachments. This is not a USB key file. Password + security key grants full access; configured USB pairs grant read-only access.",
+    "ログイン情報、メモ、カスタム項目と添付ファイルを暗号化して保存します。USB の鍵ファイルとは異なります。全機能にはパスワードとキーが必要です。設定済みの USB ペアは読み取り専用です。"
+  ],
+  "验证凭据并导出信息数据": [
+    "Verify credentials and export information",
+    "認証してデータをエクスポート"
+  ],
+  "同一文件格式用于 Windows、macOS 和 Linux。双盘配置前导出的旧备份不会自动获得双盘恢复能力，请配置后重新导出。": [
+    "One format for Windows, macOS and Linux. Exports made before USB setup do not gain USB recovery automatically; export again after setup.",
+    "Windows、macOS、Linux 共通の形式です。USB 設定前のバックアップには USB 復元機能が付かないため、設定後に再度エクスポートしてください。"
+  ],
+  "主盘更新与双盘解锁密钥": [
+    "Primary updates and USB unlock keys",
+    "主 USB の更新と両 USB の解除キー"
+  ],
+  "首次配置需要两盘：主盘保存信息备份和 primary.llkey，副盘只保存 secondary.llkey。解锁密钥文件不是信息数据备份。": [
+    "Initial setup needs both drives: primary holds data and primary.llkey; secondary holds only secondary.llkey. Unlock keys are not data backups.",
+    "初回設定は両 USB が必要です。主 USB はデータと primary.llkey、副 USB は secondary.llkey のみ保存します。解除キーはデータのバックアップではありません。"
+  ],
+  "副盘可提前交给继承人；之后保存资产、更换密码或安全密钥、更新主盘，都不需要重新写入副盘。": [
+    "You can hand off the secondary in advance. Saving assets, changing credentials and updating the primary do not rewrite it.",
+    "副 USB は事前に継承者へ渡せます。その後のデータ保存、認証情報の変更、主 USB の更新で副 USB の書き換えは不要です。"
+  ],
+  "重新配置两盘（副盘需在场）": [
+    "Reconfigure pair (secondary required)",
+    "両 USB を再設定（副 USB が必要）"
+  ],
+  "首次配置主、副 U 盘": ["Set up USB pair", "主・副 USB の初回設定"],
+  "当前信息备份已更新到主盘，副盘保持不变。": [
+    "Primary backup updated. Secondary unchanged.",
+    "主 USB のバックアップを更新しました。副 USB は変更していません。"
+  ],
+  "更新主盘信息备份（无需副盘）": [
+    "Update primary backup (no secondary needed)",
+    "主 USB を更新（副 USB 不要）"
+  ],
+  "本机版本": ["Local revision", "本機の版"],
+  "本次会话已确认主盘更新到此版本。": [
+    "Primary update to this revision confirmed this session.",
+    "このセッションで主 USB がこの版に更新されたことを確認済みです。"
+  ],
+  "尚未确认主盘包含最新版本，请更新主盘。": [
+    "Latest primary revision not confirmed. Update the primary.",
+    "主 USB が最新版か未確認です。更新してください。"
+  ],
+  "“重新配置两盘”仅用于更换整套解锁密钥，会使新数据改用新的一对密钥。日常更新请使用上面的主盘更新按钮。": [
+    "Reconfigure only to replace the entire key pair. New data will require the new pair. For routine backups, use Update primary above.",
+    "再設定は鍵ペア全体を交換する場合に使用します。新しいデータには新しいペアが必要です。日常のバックアップは主 USB 更新を使用してください。"
+  ],
+  "LegacyLock 桌面密库": [
+    "LegacyLock desktop vault",
+    "LegacyLock デスクトップ保管庫"
+  ],
+  "浏览器模式只用于界面开发。真实密库、导入、U 盘和加密设置仅在桌面应用中可用。": [
+    "Browser mode is for UI development. Vault, import, USB and encryption features require the desktop app.",
+    "ブラウザは UI 開発用です。保管庫、インポート、USB、暗号化機能はデスクトップアプリで使用してください。"
+  ],
+  "运行 npm run build，再运行 npm run electron。": [
+    "Run npm run build, then npm run electron.",
+    "npm run build の後に npm run electron を実行してください。"
+  ],
+  "数字遗产密库 · LVCF 3": [
+    "Digital heritage vault · LVCF 3",
+    "デジタル遺産保管庫・LVCF 3"
+  ],
+  "所有者 · 可管理": ["Owner · full access", "所有者・管理可能"],
+  "继承人 · 只读": ["Heir · read-only", "継承者・読み取り専用"],
+  "已锁定": ["Locked", "ロック中"],
+  "立即锁定": ["Lock now", "今すぐロック"],
+  "外观配置无法读取，暂用默认主题。密库不受影响；所有者解锁后可重新保存界面设置。": [
+    "Appearance settings unreadable; using defaults. Vault data is unaffected. Unlock as owner to save display preferences again.",
+    "外観設定を読み込めないため初期値を使用します。保管庫に影響はありません。所有者として解除後に再保存できます。"
+  ],
+  "正在验证或保存，请等待完成…": [
+    "Verifying or saving, please wait…",
+    "検証または保存中です。お待ちください…"
+  ],
+  "正在检查本机密库…": ["Checking local vault…", "本機の保管庫を確認中…"],
+  "解锁本机密库": ["Unlock local vault", "本機の保管庫を解除"],
+  "创建本机密库": ["Create local vault", "本機の保管庫を作成"],
+  "本机文件未通过校验。不会自动清空或覆盖，请保全文件并参考恢复文档。": [
+    "Local file validation failed. It will not be cleared or overwritten. Preserve it and consult recovery documentation.",
+    "本機ファイルの検証に失敗しました。自動削除や上書きは行いません。ファイルを保全し復元文書を参照してください。"
+  ],
+  "所有者解锁需要同时提供密码和安全密钥。继承人可通过双 U 盘入口只读访问。": [
+    "Owner access requires both password and security key. Heirs can import backups read-only with two USB drives.",
+    "所有者にはパスワードとキーの両方が必要です。継承者は両 USB でバックアップを読み取り専用で開けます。"
+  ],
+  "密码须至少 12 位且两次一致；请先备份安全密钥。": [
+    "Passwords must match and be at least 12 characters. Back up the security key first.",
+    "12 文字以上の一致するパスワードが必要です。先にキーを保存してください。"
+  ],
+  "密库已解锁。": ["Vault unlocked.", "保管庫を解除しました。"],
+  "设置密码（至少 12 位）": [
+    "Set password (at least 12 characters)",
+    "パスワードを設定（12 文字以上）"
+  ],
+  "密码": ["Password", "パスワード"],
+  "再次输入密码": ["Repeat password", "パスワードを再入力"],
+  "安全密钥（请抄录或保存）": [
+    "Security key (record and save)",
+    "セキュリティキー（記録・保存してください）"
+  ],
+  "生成随机安全密钥": ["Generate random security key", "ランダムキーを生成"],
+  "已在独立安全位置备份此密钥": [
+    "I saved this key in a separate safe place",
+    "キーを別の安全な場所に保存しました"
+  ],
+  "解锁为所有者": ["Unlock as owner", "所有者として解除"],
+  "创建加密密库": ["Create encrypted vault", "暗号化保管庫を作成"],
+  "此资产": ["this item", "この項目"],
+  "资产已删除，请更新主盘备份。": [
+    "Item deleted. Update your primary backup.",
+    "項目を削除しました。主 USB を更新してください。"
+  ],
+  "当前磁盘签名及会话完整性校验通过。此结果不代表离线 U 盘已更新。": [
+    "Current vault signature and session verified. This does not confirm offline USB updates.",
+    "現在の保管庫の署名とセッションを検証しました。オフライン USB の更新を確認するものではありません。"
+  ],
+  "资产": ["Items", "項目"],
+  "· 版本": ["· Revision", "・版"],
+  "· 本机保存后请更新主盘": [
+    "· Update primary after saving locally",
+    "・本機保存後に主 USB を更新"
+  ],
+  "输入密码和密钥，接管管理权限": [
+    "Enter password and key for owner access",
+    "パスワードとキーで管理権限を取得"
+  ],
+  "订阅测试：模拟试用到期，资产只读。可在订阅测试中恢复试用，不会扣费。": [
+    "Demo trial expired: items are read-only. Restore the trial in Subscription demo, with no charge.",
+    "デモ試用終了：項目は読み取り専用です。サブスクリプションのデモで無料で試用を復元できます。"
+  ],
+  "资产已加密保存，请更新主盘备份。": [
+    "Item saved encrypted. Update your primary backup.",
+    "項目を暗号化して保存しました。主 USB を更新してください。"
+  ],
+  "保存未完成，请重试。": [
+    "Save not completed. Please retry.",
+    "保存できませんでした。再試行してください。"
+  ],
+  "删除未完成。": ["Deletion not completed.", "削除が完了しませんでした。"],
+  "验证所有者凭据": ["Verify owner credentials", "所有者の認証情報を検証"],
+  "验证并导出信息数据": [
+    "Verify and export information",
+    "検証してデータをエクスポート"
+  ],
+  "验证并配置两盘": ["Verify and configure USB pair", "検証して両 USB を設定"],
+  "更换所有者凭据": ["Change owner credentials", "所有者の認証情報を変更"],
+  "请同时填写密码和安全密钥。凭据不会写入浏览器存储。": [
+    "Enter both password and security key. Credentials are not saved in browser storage.",
+    "パスワードとキーの両方を入力してください。ブラウザのストレージには保存しません。"
+  ],
+  "此操作写入所选两盘的独立 LegacyLock 目录，不格式化设备。成功后仍需妥善保管旧版备份。": [
+    "Writes to the selected drives' LegacyLock folders without formatting. Keep older backups safe.",
+    "選択した USB の LegacyLock フォルダーに保存します。フォーマットはしません。旧バックアップも安全に保管してください。"
+  ],
+  "第二次确认：这将删除本机密库和本机回退副本，应用内无法撤销。外部备份与系统残留不在删除范围。": [
+    "Second confirmation: deletes the local vault and rollback copies. This cannot be undone in the app. External backups and system remnants remain.",
+    "2 回目の確認：本機の保管庫とロールバック用コピーを削除します。アプリ内で取り消せません。外部バックアップやシステムの残留データは残ります。"
+  ],
+  "输入 DELETE 确认删除": [
+    "Type DELETE to confirm",
+    "確認のため DELETE と入力"
+  ],
+  "取消": ["Cancel", "キャンセル"],
+  "确认删除本机密库": [
+    "Confirm deletion of local vault",
+    "本機の保管庫の削除を確定"
+  ],
+  "当前密码": ["Current password", "現在のパスワード"],
+  "当前安全密钥": ["Current security key", "現在のセキュリティキー"],
+  "第一次确认：验证并继续": [
+    "First confirmation: verify and continue",
+    "1 回目の確認：認証して続行"
+  ],
+  "验证并执行": ["Verify and proceed", "検証して実行"],
+  "导入信息数据": ["Import information", "データをインポート"],
+  "选择含登录信息、安全备注和附件的 .llvault 信息备份。不要选择 .llkey 解锁密钥文件。": [
+    "Select a .llvault backup containing logins, notes and attachments, not a .llkey unlock key file.",
+    "ログイン情報、メモ、添付ファイルを含む .llvault を選択してください。.llkey 解除キーではありません。"
+  ],
+  "导入解锁方式": ["Import authentication", "インポートの認証方法"],
+  "密码＋安全密钥": ["Password + security key", "パスワード＋セキュリティキー"],
+  "双 U 盘 · 只读": ["Two USB drives · read-only", "両 USB・読み取り専用"],
+  "验证备份的密码和安全密钥后合并信息数据；保留本机设置和双盘配置，冲突记录作为副本导入。": [
+    "Verify the backup's password and key to merge items. Local settings and USB configuration remain; conflicts are imported as copies.",
+    "バックアップのパスワードとキーを検証して項目を統合します。本機設定と USB 設定は保持し、競合はコピーとして追加します。"
+  ],
+  "同时验证备份的密码和安全密钥后导入，可完整管理。若本机已有不同密库，请先解锁本机，再从导入导出页合并。": [
+    "Verify both backup credentials to import with full access. If a different local vault exists, unlock it first and merge from Import/export.",
+    "両方の認証情報で検証して全権限でインポートします。別の本機保管庫がある場合は先に解除し、インポート画面で統合してください。"
+  ],
+  "备份密码": ["Backup password", "バックアップのパスワード"],
+  "备份安全密钥": ["Backup security key", "バックアップのセキュリティキー"],
+  "选择信息备份并验证导入": [
+    "Select backup, verify and import",
+    "バックアップを選択・検証してインポート"
+  ],
+  "两盘只授予查看权限，不覆盖本机密库。修改数据或设置仍需该备份的密码和安全密钥；拔出任一盘会锁定。": [
+    "Two drives grant viewing only and never overwrite the local vault. Editing needs the backup's password and key. Removing either drive locks the session.",
+    "両 USB は閲覧権限のみ付与し、本機の保管庫を上書きしません。変更にはバックアップのパスワードとキーが必要です。どちらかを抜くとロックします。"
+  ],
+  "选择信息备份并只读访问": [
+    "Select backup for read-only access",
+    "バックアップを選び読み取り専用で開く"
+  ],
+  "主盘保存信息备份和主解锁密钥；副盘只保存副解锁密钥。未配置双盘前导出的文件不具备双盘恢复能力。": [
+    "Primary holds data and its key; secondary holds only its key. Files exported before USB setup cannot use USB recovery.",
+    "主 USB はデータと主キー、副 USB は副キーのみを保存します。USB 設定前のエクスポートは USB 復元できません。"
+  ],
+  "复制失败": ["Copy failed", "コピーに失敗しました"],
+  "背景与锁屏、继承说明、密码和安全密钥": [
+    "Appearance, lock, inheritance and local deletion",
+    "外観、ロック、継承、本機データの削除"
+  ],
+  "加密备份、双盘配置与同步": [
+    "Encrypted data backups and USB setup",
+    "暗号化データバックアップと USB 設定"
+  ],
+  "当前处于继承人只读模式，需接管控制权后方可录入新资产": [
+    "Heir read-only mode. Owner credentials required to add items.",
+    "継承者の読み取り専用モードです。追加には所有者認証が必要です。"
+  ],
+  "当前处于试用到期只读模式，点击升级订阅以录入新资产": [
+    "Demo expired. Open Subscription demo to restore editing.",
+    "デモ試用が終了しました。サブスクリプションのデモで編集を再開できます。"
+  ],
+  "点击打开资产分类选择面板，添加新资产或密钥": [
+    "Choose a category to add an item",
+    "カテゴリーを選択して項目を追加"
+  ],
+  "密码与安全密钥": [
+    "Password and security key",
+    "パスワードとセキュリティキー"
+  ],
+  "密码与密钥": ["Password & key", "パスワードとキー"],
+  "订阅测试，不会扣费": [
+    "Subscription demo, no charge",
+    "サブスクリプションのデモ・課金なし"
+  ],
+  "订阅测试 ·": ["Subscription demo ·", "サブスクリプションのデモ・"],
+  "试用中": ["Trial", "試用中"],
+  "已到期": ["Expired", "期限切れ"],
+  "已开通": ["Active", "利用中"],
+  "最大化或还原": ["Maximize or restore", "最大化・元に戻す"],
+  "最小化窗口": ["Minimize", "最小化"],
+  "关闭应用": ["Close window", "ウィンドウを閉じる"],
+  "AES-256-GCM 认证加密": [
+    "AES-256-GCM authenticated encryption",
+    "AES-256-GCM 認証付き暗号"
+  ],
+  "隐藏密码": ["Hide password", "パスワードを隠す"],
+  "显示密码": ["Show password", "パスワードを表示"],
+  "复制密码": ["Copy password", "パスワードをコピー"],
+  "网址:": ["URL:", "URL："],
+  "复制网址": ["Copy URL", "URL をコピー"],
+  "(空)": ["(empty)", "（空）"],
+  "隐藏明文": ["Hide plaintext", "平文を隠す"],
+  "显示明文": ["Show plaintext", "平文を表示"],
+  "加密附件 (": ["Encrypted attachments (", "暗号化添付ファイル（"],
+  "接管指引:": ["Heir instructions:", "継承者への案内："],
+  "测试状态已保存，没有支付、扣费或生成正式授权。": [
+    "Demo state saved. No payment, charge or real license was issued.",
+    "デモ状態を保存しました。支払いや課金、正式なライセンス発行はありません。"
+  ],
+  "状态未保存，请关闭此窗口查看错误后重试。": [
+    "Not saved. Close this dialog to review the error and retry.",
+    "保存できませんでした。この画面を閉じてエラーを確認し再試行してください。"
+  ],
+  "关闭订阅测试": [
+    "Close subscription demo",
+    "サブスクリプションのデモを閉じる"
+  ],
+  "LegacyLock 尊享订阅": [
+    "LegacyLock subscription",
+    "LegacyLock サブスクリプション"
+  ],
+  "月度、季度与年度服务 · 测试体验": [
+    "Monthly, quarterly and yearly · demo",
+    "月額・四半期・年額プラン・デモ"
+  ],
+  "模拟状态：": ["Demo state:", "デモ状態："],
+  "90 天试用（演示）": ["90-day trial (demo)", "90 日間試用（デモ）"],
+  "试用到期 · 资产只读": [
+    "Trial expired · read-only",
+    "試用終了・読み取り専用"
+  ],
+  "测试演示，不会扣费。以下为原设计的示例价格，尚未接入支付平台和正式授权验证。订阅状态不能授予继承人管理权限。": [
+    "Demo only, no charge. These are sample prices; payments and real licensing are not connected. A subscription does not grant heirs owner permissions.",
+    "課金のないデモです。価格はサンプルで、決済や正式なライセンス認証は未接続です。サブスクリプションは継承者に管理権限を付与しません。"
+  ],
+  "订阅套餐": ["Subscription plans", "プラン"],
+  "功能体验": ["Feature preview", "機能の体験"],
+  "24 类资产与自定义字段": [
+    "24 categories and custom fields",
+    "24 カテゴリーとカスタム項目"
+  ],
+  "本机加密存储与单个 2 MB 附件": [
+    "Local encryption and attachments up to 2 MB each",
+    "本機暗号化保存と各 2 MB 以下の添付"
+  ],
+  "双 U 盘继承只读恢复": [
+    "Read-only inheritance with two USB drives",
+    "両 USB による読み取り専用の継承復元"
+  ],
+  "背景主题、锁屏与备份设置": [
+    "Themes, locking and backup settings",
+    "背景、ロック、バックアップの設定"
+  ],
+  "模拟开通所选套餐（不扣费）": [
+    "Simulate selected plan (no charge)",
+    "選択プランをデモで有効化（課金なし）"
+  ],
+  "模拟试用到期": ["Simulate trial expiry", "試用終了をシミュレート"],
+  "恢复试用体验": ["Restore demo trial", "デモ試用を再開"],
+  "模拟到期时暂停新增、修改与删除资产；所有者仍可查看、导出、管理设置和恢复试用。此状态仅属于当前安装，不随双盘备份迁移。": [
+    "Simulated expiry blocks adding, editing and deleting items. Owners can still view, export, manage settings and restore the trial. Demo state is local to this installation.",
+    "デモ期限切れは項目の追加・編集・削除を停止します。所有者は閲覧、エクスポート、設定管理、試用再開が可能です。この状態はこの端末のみ有効です。"
+  ],
+  "本次体验无需银行卡或激活码。": [
+    "No card or activation code needed for this demo.",
+    "デモにカードや有効化コードは不要です。"
+  ],
+  "关闭": ["Close", "閉じる"],
+  "保存失败，请重试。": [
+    "Save failed. Please retry.",
+    "保存に失敗しました。再試行してください。"
+  ],
+  "查看资产": ["View item", "項目を表示"],
+  "编辑资产": ["Edit item", "項目を編集"],
+  "只读访问；修改需要所有者密码和安全密钥。": [
+    "Read-only access. Editing requires owner password and security key.",
+    "読み取り専用です。編集には所有者のパスワードとキーが必要です。"
+  ],
+  "订阅测试：模拟试用到期，可在订阅测试中恢复试用。": [
+    "Demo expired. Restore the trial in Subscription demo.",
+    "デモ期限切れです。サブスクリプションのデモで試用を再開できます。"
+  ],
+  "只读保护中": ["Read-only", "読み取り専用"],
+  "您可以查看和下载附件，修改资产需要验证所有者凭据。": [
+    "You can view and download attachments. Editing requires owner authentication.",
+    "閲覧と添付ファイルの保存が可能です。編集には所有者認証が必要です。"
+  ],
+  "当前模拟试用到期。可在订阅测试中恢复试用或模拟开通，不会扣费。": [
+    "Demo trial expired. Restore the trial or simulate a plan with no charge.",
+    "デモ試用終了です。無料で試用再開またはプランをシミュレートできます。"
+  ],
+  "删除失败，请重试。": [
+    "Deletion failed. Please retry.",
+    "削除に失敗しました。再試行してください。"
+  ],
+  "本机加密保存 · AES-256-GCM": [
+    "Encrypted locally · AES-256-GCM",
+    "本機で暗号化保存・AES-256-GCM"
+  ],
+  "月度服务": ["Monthly", "月額プラン"],
+  "季度服务": ["Quarterly", "四半期プラン"],
+  "年度服务": ["Yearly", "年額プラン"],
+  "月": ["month", "月"],
+  "季": ["quarter", "四半期"],
+  "年": ["year", "年"],
+  "1 个月 · 按月体验": ["1 month", "1 か月"],
+  "3 个月 · 按季管理": ["3 months", "3 か月"],
+  "12 个月 · 年度方案": ["12 months", "12 か月"],
+  "选择信息数据备份（只读访问）": [
+    "Select information backup (read-only)",
+    "データバックアップを選択（読み取り専用）"
+  ],
+  "导入信息数据备份（合并，不覆盖现有资产）": [
+    "Import information (merge, keep existing items)",
+    "データをインポート（既存項目を保持して統合）"
+  ],
+  "选择 LVCF 3 密库备份": [
+    "Select LVCF 3 information backup",
+    "LVCF 3 データバックアップを選択"
+  ],
+  "导出信息数据备份（加密）": [
+    "Export encrypted information backup",
+    "暗号化データバックアップをエクスポート"
+  ],
+  "{0}已开通（演示）": ["{0} active (demo)", "{0} 有効（デモ）"],
+  "删除“{0}”？删除后请更新主盘备份。": [
+    "Delete “{0}”? Update your primary backup afterwards.",
+    "「{0}」を削除しますか？削除後に主 USB を更新してください。"
+  ],
+  "销毁确认已失效，请重新验证密码和安全密钥。": [
+    "Deletion confirmation expired. Verify your password and key again.",
+    "削除確認が失効しました。パスワードとキーを再検証してください。"
+  ],
+  "当前模拟试用到期；可在订阅测试页面恢复试用或模拟开通。不会扣费。": [
+    "Demo expired. Restore the trial or simulate a plan in Subscription demo, free of charge.",
+    "デモが終了しました。サブスクリプションのデモで無料で再開できます。"
+  ],
+  "密码或安全密钥错误，或密库内容已损坏。": [
+    "Incorrect password or key, or damaged vault.",
+    "パスワードまたはキーが違うか、保管庫が破損しています。"
+  ],
+  "请填写至少 12 位密码和完整的 LL3 安全密钥。": [
+    "Enter a password of at least 12 characters and the complete LL3 key.",
+    "12 文字以上のパスワードと完全な LL3 キーを入力してください。"
+  ],
+  "此操作需要所有者权限，请同时输入密码和安全密钥接管。": [
+    "Owner access required. Enter both password and security key.",
+    "所有者権限が必要です。パスワードとキーの両方を入力してください。"
+  ],
+  "会话已锁定，请重新解锁。": [
+    "Session locked. Unlock again.",
+    "セッションがロックされました。再度解除してください。"
+  ],
+  "主、副盘必须是两个不同的物理 USB 设备，不能是同一盘的两个分区。": [
+    "Use two distinct physical USB drives, not two partitions of one drive.",
+    "同じ USB の 2 パーティションではなく、異なる物理 USB が 2 本必要です。"
+  ],
+  "未检测到所选 U 盘，请重新扫描。": [
+    "Selected USB not found. Scan again.",
+    "選択した USB が見つかりません。再スキャンしてください。"
+  ],
+  "密钥文件与此密库或当前密钥代次不匹配。": [
+    "Key files do not match this vault or key generation.",
+    "キーがこの保管庫またはキー世代と一致しません。"
+  ],
+  "签名验证失败，请停止使用该文件并检查备份。": [
+    "Signature failed. Stop using this file and check your backups.",
+    "署名検証に失敗しました。このファイルの使用を止めバックアップを確認してください。"
+  ],
+  "该备份属于另一个密库。": [
+    "This backup belongs to another vault.",
+    "別の保管庫のバックアップです。"
+  ],
+  "这台电脑已有另一个密库；请在独立系统账户中导入，避免覆盖本机数据。": [
+    "A different local vault exists. Unlock it to merge items, or import in a separate system account.",
+    "別の保管庫が存在します。本機を解除して項目を統合するか、別のシステムアカウントでインポートしてください。"
+  ],
+  "该备份比本机密库旧，已阻止覆盖。": [
+    "Backup is older than the local vault. Replacement blocked.",
+    "本機より古いバックアップです。上書きをブロックしました。"
+  ],
+  "本机密库损坏，已阻止覆盖。请先保全文件并按恢复文档处理。": [
+    "Local vault damaged. Replacement blocked. Preserve files and follow recovery documentation.",
+    "本機の保管庫が破損しています。上書きを禁止しました。ファイルを保全し復元文書を参照してください。"
+  ],
+  "本机已有密库，已阻止重新初始化。": [
+    "Local vault exists. Initialization blocked.",
+    "本機に保管庫が存在するため初期化を禁止しました。"
+  ],
+  "数据超出限制：密库文件 32 MB，资产总量 20 MB。": [
+    "Size limit exceeded: vault 32 MB, total items 20 MB.",
+    "容量超過：保管庫 32 MB、項目合計 20 MB が上限です。"
+  ],
+  "资产格式不正确或超出容量限制；单个附件最多 2 MB。": [
+    "Invalid item format or size. Each attachment is limited to 2 MB.",
+    "項目形式または容量が無効です。添付は各 2 MB までです。"
+  ],
+  "设置值无效。": ["Invalid setting.", "無効な設定です。"],
+  "文件不是受支持的 LVCF 3 信息备份，请保留原文件并查阅恢复文档。": [
+    "Unsupported file. Preserve the original and consult LVCF 3 recovery documentation.",
+    "未対応のファイルです。原本を保全し LVCF 3 復元文書を参照してください。"
+  ],
+  "文件结构无效或已损坏。": [
+    "Invalid or damaged file structure.",
+    "ファイル構造が無効か破損しています。"
+  ],
+  "此旧文件格式不受迁移器支持。请保留原文件，参阅迁移文档。": [
+    "Unsupported legacy format. Preserve the original and consult migration documentation.",
+    "未対応の旧形式です。原本を保全し移行文書を参照してください。"
+  ],
+  "旧本机数据缺少完整认证信息，不能自动授权迁移；请保留原数据并使用已知凭据的旧版加密导出包。": [
+    "Legacy local data lacks full authentication. Preserve it and use an authenticated export with known credentials.",
+    "旧ローカルデータは認証情報が不足しています。保全し、認証情報が既知の暗号化エクスポートを使用してください。"
+  ],
+  "未发现旧版数据。": ["No legacy data found.", "旧データはありません。"],
+  "尚未配置双 U 盘恢复。": [
+    "Two-USB recovery not configured.",
+    "両 USB による復元は未設定です。"
+  ],
+  "请稍后再试。": [
+    "Please try again shortly.",
+    "少し待ってから再試行してください。"
+  ],
+  "磁盘密库与当前会话不一致，请锁定后重新打开。": [
+    "Disk vault differs from this session. Lock and reopen.",
+    "ディスク上の保管庫とセッションが一致しません。ロックして開き直してください。"
+  ],
+  "U 盘目录包含链接或异常路径，已停止写入。": [
+    "USB path contains links or unsafe entries. Writing stopped.",
+    "USB パスにリンクまたは不正な項目があり、書き込みを停止しました。"
+  ],
+  "写入后的校验失败，不能确认保存成功。": [
+    "Write verification failed. Save cannot be confirmed.",
+    "書き込み後の検証に失敗しました。保存成功を確認できません。"
+  ],
+  "操作失败，未确认成功。请检查设备、文件权限和剩余空间；不要删除原文件。": [
+    "Operation failed. Check devices, permissions and free space. Do not delete the original file.",
+    "操作に失敗しました。デバイス、権限、空き容量を確認し、原本は削除しないでください。"
+  ],
+  "请使用桌面应用。浏览器预览不提供真实密库或模拟 U 盘。": [
+    "Use the desktop application for vault and USB features.",
+    "保管庫と USB 機能はデスクトップアプリで使用してください。"
+  ],
+  "幻紫星雲 (默認)": ["Royal violet (default)", "ロイヤルバイオレット（既定）"],
+  "極光深空": ["Cyber cyan", "サイバーシアン"],
+  "黑曜玄金": ["Obsidian gold", "オブシディアンゴールド"],
+  "賽博霓虹": ["Electric magenta", "エレクトリックマゼンタ"],
+  "深海潛航": ["Abyssal navy", "アビサルネイビー"],
+  "复制 {0}": ["Copy {0}", "{0} をコピー"],
+  "下载/导出附件: {0}": ["Download attachment: {0}", "添付を保存：{0}"],
+  "{0} 项资产": ["{0} items", "{0} 項目"],
+  "背景、锁屏与托盘、继承说明和本机数据删除": [
+    "Appearance, lock, tray, inheritance and local deletion",
+    "外観、ロック、トレイ、継承、本機データ削除"
+  ],
+  "使用双 U 盘只读打开信息备份后，继承人可在该资产中查看此说明。": [
+    "Heirs can read these instructions with the item after opening a backup with both USB drives.",
+    "両 USB でバックアップを読み取り専用で開くと、継承者はこの項目の説明を閲覧できます。"
+  ],
+  "关闭应用确认": ["Close application", "アプリを閉じる"],
+  "隐藏到托盘会立即锁定密库。请选择关闭方式。": [
+    "Hiding to the tray locks the vault immediately. Choose how to close.",
+    "トレイに隠すと直ちにロックします。閉じる方法を選択してください。"
+  ],
+  "无法创建托盘，窗口保持打开。": [
+    "Tray unavailable. The window remains open.",
+    "トレイを作成できません。ウィンドウは開いたままです。"
+  ],
+  "关闭提示默认选择托盘": [
+    "Default to tray in close dialog",
+    "閉じる確認でトレイを既定にする"
+  ],
+  "信息列表": ["Items", "項目一覧"],
+  "详细信息": ["Details", "詳細情報"],
+  "备注": ["Notes", "メモ"],
+  "正在加载界面…": ["Loading view…", "画面を読み込み中…"]
+}

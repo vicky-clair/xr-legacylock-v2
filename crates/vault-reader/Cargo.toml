@@ -1,0 +1,13 @@
+# 独立阅读器依赖：只使用协议核心、隐藏凭据输入和内存清理，不引入桌面运行库。
+[package]
+name = "vault-reader"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+publish.workspace = true
+
+[dependencies]
+vault-core = { path = "../vault-core" }
+serde_json = "=1.0.145"
+rpassword = "=7.4.0"
+zeroize = "=1.8.2"

@@ -1,0 +1,17 @@
+{
+  "identifier": "main",
+  "description": "Local main window only. No filesystem, shell, HTTP, or remote capability.",
+  "windows": ["main"],
+  "permissions": [
+    "allow-export-attachment",
+    "allow-import-attachments",
+    "allow-get-item", "allow-search-items",
+    "allow-scan", "allow-provision", "allow-sync", "allow-recover",
+    "core:event:allow-listen", "core:event:allow-unlisten",
+    "allow-status", "allow-preferences", "allow-local-unlock-status", "allow-new-secret",
+    "allow-lock", "allow-activity", "allow-view-language", "allow-window-control",
+    "allow-initialize", "allow-unlock", "allow-save-item", "allow-delete-item", "allow-settings", "allow-set-preferences",
+    "allow-unlock-local", "allow-set-remembered-secret",
+    "allow-health", "allow-credentials", "allow-import-owner", "allow-import-data", "allow-export", "allow-prepare-destroy", "allow-destroy", "allow-copy"
+  ]
+}

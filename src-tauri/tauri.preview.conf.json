@@ -1,0 +1,21 @@
+{
+  "bundle": {
+    "active": true,
+    "targets": ["nsis"],
+    "icon": ["icons/icon.ico", "icons/icon.png"],
+    "shortDescription": "LegacyLock development preview",
+    "resources": {
+      "../docs/dependencies/THIRD-PARTY-NOTICES.txt": "THIRD-PARTY-NOTICES.txt",
+      "../docs/dependencies/inventory.json": "dependency-inventory.json",
+      "../docs/使用与迁移说明.md": "README.md"
+    },
+    "windows": {
+      "webviewInstallMode": { "type": "downloadBootstrapper", "silent": true },
+      "nsis": {
+        "installMode": "currentUser",
+        "languages": ["SimpChinese", "English", "Japanese"],
+        "displayLanguageSelector": true
+      }
+    }
+  }
+}

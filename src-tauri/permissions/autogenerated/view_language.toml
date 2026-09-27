@@ -1,0 +1,11 @@
+# Automatically generated - DO NOT EDIT!
+
+[[permission]]
+identifier = "allow-view-language"
+description = "Enables the view_language command without any pre-configured scope."
+commands.allow = ["view_language"]
+
+[[permission]]
+identifier = "deny-view-language"
+description = "Denies the view_language command without any pre-configured scope."
+commands.deny = ["view_language"]

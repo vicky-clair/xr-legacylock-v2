@@ -1,0 +1,34 @@
+# Windows 持续集成：先完整验证，再生成未签名测试包和独立阅读器，最后上传产物及测试日志。
+name: Windows validation
+on: [push, pull_request, workflow_dispatch]
+permissions:
+  contents: read
+jobs:
+  windows:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+      - name: Install pinned Rust toolchain
+        run: rustup toolchain install 1.91.1 --profile minimal --component rustfmt --component clippy
+      - run: npm ci
+      - name: Verify
+        shell: pwsh
+        run: ./scripts/verify.ps1
+      - name: Build unsigned Windows test package
+        run: npm run package:preview
+      - name: Build independent reader
+        run: cargo build -p vault-reader --release --locked
+      - name: Collect
+        shell: pwsh
+        run: ./scripts/collect-release.ps1
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: windows-test-build-and-evidence
+          path: |
+            releases/
+            test-results/

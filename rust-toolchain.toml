@@ -1,0 +1,5 @@
+# 固定可复现的 Rust 工具链和静态检查组件；版本升级需重新执行协议与业务回归。
+[toolchain]
+channel = "1.91.1"
+profile = "minimal"
+components = ["rustfmt", "clippy"]

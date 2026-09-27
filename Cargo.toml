@@ -1,0 +1,20 @@
+# Rust 工作区：协议、服务、阅读器和桌面宿主共享版本；默认 cargo 命令只构建核心与阅读器。
+# 发布优化保持 thin LTO 与单代码生成单元；unwind 支持宿主捕获任务异常。
+[workspace]
+members = ["crates/vault-core", "crates/vault-reader", "crates/vault-service", "src-tauri"]
+default-members = ["crates/vault-core", "crates/vault-reader"]
+resolver = "3"
+
+[workspace.package]
+version = "0.2.0"
+edition = "2024"
+rust-version = "1.91"
+publish = false
+
+[profile.release]
+opt-level = 3
+lto = "thin"
+codegen-units = 1
+strip = "debuginfo"
+panic = "unwind"
+

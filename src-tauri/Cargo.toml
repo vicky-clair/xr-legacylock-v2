@@ -1,0 +1,27 @@
+# Tauri 宿主依赖：原生对话框、单实例、剪贴板与托盘；这些插件能力不直接全部开放给前端。
+[package]
+name = "legacylock-desktop"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+publish.workspace = true
+
+[features]
+custom-protocol = ["tauri/custom-protocol"]
+
+[build-dependencies]
+tauri-build = { version = "=2.6.3", features = [] }
+
+[dependencies]
+tauri = { version = "=2.11.6", features = ["tray-icon", "image-png"] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "=1.0.145"
+vault-core = { path = "../crates/vault-core" }
+vault-service = { path = "../crates/vault-service" }
+tauri-plugin-dialog = "=2.7.3"
+zeroize = "=1.8.2"
+tauri-plugin-single-instance = "=2.4.5"
+tauri-plugin-clipboard-manager = "=2.3.3"
+
+[target.'cfg(windows)'.dependencies]
+windows-sys = { version = "=0.61.2", features = ["Win32_Foundation", "Win32_UI_Shell", "Win32_UI_WindowsAndMessaging", "Win32_System_RemoteDesktop"] }

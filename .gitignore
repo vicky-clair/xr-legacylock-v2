@@ -1,0 +1,9 @@
+/target/
+/test-results/
+/dist/
+/node_modules/
+*.llvault
+*.llkey
+*.tsbuildinfo
+/src-tauri/gen/
+/releases/

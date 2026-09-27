@@ -1,0 +1,22 @@
+# 业务服务依赖：文件锁、原子写入、附件与密钥记忆；Windows API 按目标平台启用，临时目录仅供测试。
+[package]
+name = "vault-service"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+publish.workspace = true
+
+[dependencies]
+vault-core = { path = "../vault-core" }
+serde_json = "=1.0.145"
+fs2 = "=0.4.3"
+rand = "=0.8.5"
+zeroize = "=1.8.2"
+base64 = "=0.22.1"
+sha2 = "=0.10.9"
+
+[target.'cfg(windows)'.dependencies]
+windows-sys = { version = "=0.61.2", features = ["Win32_Storage_FileSystem", "Win32_Security_Cryptography", "Win32_Foundation"] }
+
+[dev-dependencies]
+tempfile = "=3.23.0"

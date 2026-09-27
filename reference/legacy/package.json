@@ -1,0 +1,105 @@
+{
+  "name": "legacylock",
+  "version": "1.0.6",
+  "private": true,
+  "description": "LegacyLock - Local encrypted heritage vault with dual-USB read-only recovery",
+  "author": "LegacyLock Core Architecture <support@legacylock.vault>",
+  "main": "electron/main.cjs",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview",
+    "electron": "electron .",
+    "electron:dev": "npm run build && electron .",
+    "test": "node --test tests/*.test.cjs",
+    "test:desktop": "npm run build && node tests/run-desktop.cjs",
+    "reader": "node scripts/recovery-reader.cjs",
+    "dist:win": "npm run build && electron-builder --win",
+    "dist:unpack": "npm run build && electron-builder --win --dir",
+    "dist:repack": "electron-builder --win nsis --prepackaged release/win-unpacked",
+    "dist:linux": "npm run build && electron-builder --linux",
+    "dist:all": "npm run build && electron-builder --win --linux"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.4",
+    "@types/react": "^19.0.10",
+    "@types/react-dom": "^19.0.4",
+    "@vitejs/plugin-react": "^4.3.4",
+    "electron": "44.4.3",
+    "electron-builder": "^26.15.3",
+    "prettier": "3.9.8",
+    "typescript": "^5.7.3",
+    "vite": "^6.1.0",
+    "lucide-react": "^0.475.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "build": {
+    "appId": "com.legacylock.vault",
+    "productName": "LegacyLock",
+    "copyright": "Copyright © 2026 LegacyLock Core Architecture",
+    "directories": {
+      "output": "release"
+    },
+    "electronLanguages": [
+      "en-US",
+      "zh-CN",
+      "ja"
+    ],
+    "compression": "maximum",
+    "files": [
+      "dist/**/*",
+      "electron/**/*",
+      "!electron/vault-migrate.cjs",
+      "package.json"
+    ],
+    "extraResources": [
+      {
+        "from": "scripts/recovery-reader.cjs",
+        "to": "reader/scripts/recovery-reader.cjs"
+      },
+      {
+        "from": "electron/vault-core.cjs",
+        "to": "reader/electron/vault-core.cjs"
+      },
+      {
+        "from": "electron/vault-store.cjs",
+        "to": "reader/electron/vault-store.cjs"
+      },
+      {
+        "from": "LVCF3_PROTOCOL.md",
+        "to": "reader/LVCF3_PROTOCOL.md"
+      },
+      {
+        "from": "HEIR_MANUAL.md",
+        "to": "reader/HEIR_MANUAL.md"
+      }
+    ],
+    "win": {
+      "target": [
+        "nsis",
+        "portable"
+      ]
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "shortcutName": "LegacyLock 遗产保险锁",
+      "differentialPackage": false
+    },
+    "portable": {
+      "artifactName": "${productName}-v${version}-Windows-Portable.${ext}"
+    },
+    "linux": {
+      "target": [
+        "tar.gz"
+      ],
+      "maintainer": "LegacyLock Core Architecture <support@legacylock.vault>",
+      "category": "Utility",
+      "description": "LegacyLock - Local encrypted digital heritage vault",
+      "artifactName": "${productName}-v${version}-Linux-${arch}.${ext}"
+    }
+  }
+}
